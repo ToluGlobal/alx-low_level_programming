@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Return: Always O (Success)
- * /
+ */
 int main(void)
 {
 int a;
