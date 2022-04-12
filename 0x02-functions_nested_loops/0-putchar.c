@@ -1,21 +1,20 @@
 #include "main.h"
-
 /**
- * main - Prints "_putchar" followed by a new line.
- *
- * Return: Always 0.
+ * main - main block
+ * Description:print -putchar in a new line
+ * Return: this program returns zero
  */
 int main(void)
 {
-        _putchar('_');
-        _putchar('p');
-        _putchar('u');
-        _putchar('t');
-        _putchar('c');
-        _putchar('h');
-        _putchar('a');
-        _putchar('r');
-        _putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-        return (0);
+return (0);
 }
