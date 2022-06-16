@@ -1,23 +1,25 @@
+#include <stdio.h>
 #include "lists.h"
+
 /**
- * print_list - prints all the elements of a list_t list.
- * @h: singly linked list.
- * Return: number of elements in the list.
+ * print_list - prints all strings in a linked list
+ * @h: list parameter
+ * Return: numbers of strongs encountered in the list
  */
 
 size_t print_list(const list_t *h)
 {
-	size_t number_element;
+	size_t n = 0;
 
-	number_element = 0;
-	while (h != NULL)
+	while (h)
 	{
-		if (h->str == NULL)
-			printf("[%d] %s\n", 0, "(nil)");
+		if (!h->str)
+			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", h->len, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		number_element++;
+		n++;
 	}
-	return (number_element);
+
+	return (n);
 }
